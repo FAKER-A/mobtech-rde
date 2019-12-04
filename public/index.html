@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- library css -->
+
+</head>
+<body>
+  <div id="app"></div>
+
+  <!-- library js -->
+  
+  <% for (var js in htmlWebpackPlugin.options.buildjs) {
+    %>
+      <script src="vendor/<%= htmlWebpackPlugin.options.buildjs[js].js %>"></script>
+    <%
+  } %>
+</body>
+</html>
