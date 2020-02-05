@@ -1,0 +1,20 @@
+{
+  "pages": [
+    {
+      "entry": "home",
+      "title": "首页",
+      "cdn": {}
+    },
+    {
+      "entry": "workflow",
+      "title": "工作流",
+      "cdn": {}
+    }
+  ],
+  "basePath": "../src/pages",
+  "cdn": {
+    "js": [],
+    "css": []
+  },
+  "externals": {}
+}

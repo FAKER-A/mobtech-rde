@@ -6,9 +6,9 @@
     "dev": "node scripts/dev.js",
     "start": "npm run dev",
     "build-dll": "node scripts/build.dll.js",
-    "build-uat": "cross-env NODE_ENV=uat node scripts/build.js",
-    "build-test": "cross-env NODE_ENV=test node scripts/build.js",
-    "build-prod": "cross-env NODE_ENV=prod node scripts/build.js"
+    "build-uat": "cross-env NODE_ENV=uat node scripts/preBuild.js",
+    "build-test": "cross-env NODE_ENV=test node scripts/preBuild.js",
+    "build-prod": "cross-env NODE_ENV=prod node scripts/preBuild.js"
   },
   "keywords": [
     "react",
