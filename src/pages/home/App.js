@@ -1,5 +1,11 @@
 import React from 'react';
 
+import { LocaleProvider } from "antd"
+import zhCN from 'antd/es/locale-provider/zh_CN';
+
+// 更改Pagination的中文显示
+zhCN.Pagination.jump_to = "前往"
+
 import Header from "../../components/header"
 import SubNav from "../../components/subNav"
 import UserInfo from "./components/userInfo/index.js"
@@ -16,26 +22,28 @@ export default function App() {
     entryTime: "1月2日"
   }
   return (
-    <div className="app">
-      <div className="app-header">
-        <Header></Header>
+    <LocaleProvider locale={zhCN}>
+      <div className="app">
+        <div className="app-header">
+          <Header></Header>
+        </div>
+        <main className="app-body">
+          <div className="app-body-left">
+            <SubNav active="home"></SubNav>
+          </div>
+          <div className="app-body-content">
+            <MobList></MobList>
+          </div>
+          <div className="app-body-right">
+            <div className="app-body-right-top">
+              <UserInfo {...user} ></UserInfo>
+            </div>
+            <div className="app-body-right-bottom">
+              <Guide></Guide>
+            </div>
+          </div>
+        </main>
       </div>
-      <main className="app-body">
-        <div className="app-body-left">
-          <SubNav active="home"></SubNav>
-        </div>
-        <div className="app-body-content">
-          <MobList></MobList>
-        </div>
-        <div className="app-body-right">
-          <div className="app-body-right-top">
-            <UserInfo {...user} ></UserInfo>
-          </div>
-          <div className="app-body-right-bottom">
-            <Guide></Guide>
-          </div>
-        </div>
-      </main>
-    </div>
+    </LocaleProvider>
   )
 }
