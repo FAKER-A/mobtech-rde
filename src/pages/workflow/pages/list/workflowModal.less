@@ -1,0 +1,43 @@
+.workflowModal{
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  &-body{
+    flex:1;
+    overflow-y: auto;
+    margin-top: 10px;
+    &-classify{
+      &-title{
+        height:44px;
+        padding: 0 20px;
+        background:rgba(245,246,248,1);
+        border-radius:4px;
+        font-size:14px;
+        font-family:PingFangSC-Regular,PingFang SC;
+        font-weight:400;
+        color:rgba(0,0,0,0.85);
+        line-height:44px;
+      }
+      &-body{
+        padding: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        &-item {
+          width: 127px;
+          text-align: center;
+          padding: 10px;
+          cursor: pointer;
+          &:hover{
+            background:rgba(255,255,255,1);
+            box-shadow:0px 2px 10px 0px rgba(38,42,63,0.15);
+            border-radius:4px;
+          }
+          p{
+            margin-bottom:0;
+            margin-top: 10px;
+          }
+        }
+      }
+    }
+  }
+}

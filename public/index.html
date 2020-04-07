@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- library css -->
+  <title><%= htmlWebpackPlugin.options.title %></title>
+  <% for (var i in htmlWebpackPlugin.options.cdn.css) { %>
+  <link rel="stylesheet" href="<%= htmlWebpackPlugin.options.cdn.css[i] %>"><% } %>
+</head>
+
+<body>
+  <div id="app"></div>
+
+
+  <% for (var i in htmlWebpackPlugin.options.cdn.js) { %>
+  <script src="<%= htmlWebpackPlugin.options.cdn.js[i] %>"></script><% } %>
+  <!-- library js -->
+
+  <% for (var js in htmlWebpackPlugin.options.buildjs) {
+    %>
+  <script src="vendor/<%= htmlWebpackPlugin.options.buildjs[js].js %>"></script>
+  <%
+  } %>
+</body>
+
+</html>

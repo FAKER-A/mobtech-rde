@@ -1,0 +1,47 @@
+#app {
+  height:100%;
+  width: 100%;
+  overflow-x: auto;
+  background-color: #F4F8FB;
+} 
+.app {
+  height:100%;
+}
+.app-header{
+  position: fixed;
+  width: 100%;
+  top:0;
+}
+main{
+  min-width: 1200px;
+  max-width: 1920px;
+  width: 90vw;
+  height: 100%;
+  padding-top: 84px;
+  padding-bottom: 20px;
+  margin:0 auto;
+  &.app-body{
+    display: flex;
+  }
+  .app-body-left {
+    min-width: 250px;
+    background-color: #FFFFFF;
+    border-radius: 4px;
+    overflow-y: auto;
+  }
+  .app-body-content {
+    flex: 1;
+    margin:0 10px;
+    background-color: #FFFFFF;
+    border-radius: 4px;
+  }
+  .app-body-right {
+    min-width: 250px;
+    background-color: #FFFFFF;
+    border-radius: 4px;
+    overflow-y: auto;
+    &-top {
+      border-bottom: 1px solid #F1F6FD;
+    }
+  }
+}

@@ -1,0 +1,44 @@
+.infoModal{
+  display: flex;
+  flex-direction: column;
+  min-height: 280px;
+  max-height: 70vh;
+  overflow-y: auto;
+  margin-right: -22px;
+  padding-right: 20px;
+  &-header{
+    padding: 0px 15px;
+    &-title{
+      font-size:24px;
+      font-family:PingFangSC-Medium,PingFang SC;
+      font-weight:500;
+      color:rgba(0,0,0,0.85);
+      line-height:30px;
+    }
+    &-desc{
+      display: flex;
+      height:15px;
+      font-size:14px;
+      font-family:PingFangSC-Regular,PingFang SC;
+      font-weight:400;
+      color:rgba(0,0,0,0.45);
+      line-height:15px;
+      .time{
+        margin-right:20px;
+      }
+    }
+  }
+  &-body{
+    font-size: 16px;
+    font-family:PingFangSC-Regular,PingFang SC;
+    font-weight:400;
+    color:rgba(0,0,0,0.65);
+    line-height:24px;
+    p{
+      margin-bottom: 0;
+    }
+  }
+  img{
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,41 @@
+@import "~antd/dist/antd.less";
+@primary-color: #009A9E;
+
+// 重置样式
+.ant-table-header{
+  background: #F5F6F8;
+  tr{
+    th{
+      background: #F5F6F8;
+    }
+  }
+  
+}
+.ant-table-thead > tr.ant-table-row-hover:not(.ant-table-expanded-row):not(.ant-table-row-selected) > td, .ant-table-tbody > tr.ant-table-row-hover:not(.ant-table-expanded-row):not(.ant-table-row-selected) > td, .ant-table-thead > tr:hover:not(.ant-table-expanded-row):not(.ant-table-row-selected) > td, .ant-table-tbody > tr:hover:not(.ant-table-expanded-row):not(.ant-table-row-selected) > td{
+background: #F5F7FA;
+}
+
+.ant-dropdown-menu-item:hover, .ant-dropdown-menu-submenu-title:hover{
+  background: #F5F7FA;
+}
+
+.ant-dropdown-menu-item-selected, .ant-dropdown-menu-submenu-title-selected, .ant-dropdown-menu-item-selected > a, .ant-dropdown-menu-submenu-title-selected > a{
+  background: #F5F7FA;
+}
+
+.ant-table-filter-dropdown-btns{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  padding: 7px 10px;
+  line-height:22px;
+  .confirm{
+    margin-left:10px;
+  }
+  .clear,.confirm{
+    font-size:14px;
+    font-family:PingFangSC-Regular,PingFang SC;
+    font-weight:400;
+    color:rgba(0,0,0,0.65);
+  }
+}
